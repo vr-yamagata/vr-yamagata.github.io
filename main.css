@@ -19,6 +19,7 @@
 
 /* リンクの色を上書き */	
 a {
+	text-decoration: none;
 	color: #333;
 }
 
