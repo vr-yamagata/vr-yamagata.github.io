@@ -1,5 +1,32 @@
 .member {
 	padding-top: 20px;
 	padding-bottom: 20px;
-	display: block;
+	padding-left: 30px;
+	padding-right: 50px;
+	margin-top: 30px;
+	width: 320px;
+	background-color: #eee;
+}
+
+.name {
+	font-size: 34px;
+	text-align: right;
+}
+
+.sns_link {
+	text-align: right;
+}
+
+/* リンクの色を上書き */	
+a {
+	color: #333;
+}
+
+/* 自分の名前で好きな色を指定 */
+.naoto {
+	background-color: #eef;
+}
+
+.someone {
+	background-color: #efe;
 }
