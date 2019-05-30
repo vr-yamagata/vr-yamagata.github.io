@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="main.css" />
+  <title>編集方法 | VR部公式サイト</title>
+</head>
+<body>
+	<p>このページでは、VR部のサイトの編集方法を説明します。</p>
+	<p>少しむずかしいですが、Webエンジニアとしての基礎が身につくので頑張ってください！</p>
+	<p>（間違いなどありましたらpull reqください）</p>
+	<h1>はじめに</h1>
+	<p>このサイトはGitHub Pagesというサービスを使用して作成しています。</p>
+	<p>VR部のメンバーでProgateのHTML編を終わらせた人は、このサイトの編集に参加してみましょう。</p>
+	編集のおおまかな流れはこちらの記事で紹介されていますので、まずは目を通しておくといいでしょう。
+	<blockquote>
+	<h3>GitHub PagesでWebデザイナーが自作コードの紹介ページを公開するポイント</h3>
+	<a href="https://tech.qookie.jp/posts/info-github-pages-create/">https://tech.qookie.jp/posts/info-github-pages-create/</a>
+	</blockquote>
+	<h1>事前準備</h1>
+	<ul>
+		<li>GitHubアカウントの作成</li>
+		<li>作成したアカウントの申告</li>
+		<li>Gitのインストール</li>
+		<li>GitとGitHubの連携</li>
+		<li>テキストエディタのインストール(任意)</li>
+	</ul>
+	<h2>GitHubアカウントの作成</h2>
+	<p><a href="https://github.com">GitHub</a>にアクセスして、アカウントを作成してください。</p>
+	<p>英語が多いので大変ですが、文法は難しくないので頑張ってください。</p>
+	<p>「GitHub アカウント作成　方法」で検索しても良いです。</p>
+	<h2>作成したアカウントの申告</h2>
+	<p>このサイトを複数人で編集する場合、あなたのアカウントに対してGitHubの<a href="https://github.com/vr-yamagata/vr-yamagata.github.io">vr-yamagata/vr-yamagata.github.ioリポジトリ</a>にpushやmergeができる権限(collaborator権限)を付与する必要があります。</p>
+	<p>ちなみに、編集者はpull requestを管理者に送信して、管理者が内容をチェックしてmergeする方法もありますが、Git初心者には敷居が高いのと趣味プログラムの範囲で使用する機会は少ないという理由で採用しません。</p>
+	<p>代表のTwitterなりLINEなりDiscordなりで、「VR部のリポジトリのコラボレーターに追加してください！アカウント名は〇〇です！」と連絡してください。追加します。</p>
+	<h2>Gitのインストール</h2>
+	<p>サイト作成で使用するPCに、Gitをインストールしてください。</p>
+	<p>※Gitはバージョン管理システムの名前、GitHubは、それをクラウド上で管理するサービスの名前です。MSペイントとPixivみたいなものです。</p>
+	<p>Gitのインストールの方法は、Windowsは<a href="https://eng-entrance.com/git-install">このページ</a>、Macは<a href="https://eng-entrance.com/git-install">このページ</a>が参考になると思います。</p>
+	<h2>GitとGitHubの連携</h2>
+	<p>GitとGitHubを連携します。</p>
+	<p>下記の記事を参考に、コマンドラインからGitHubに対してSSH接続が行えるように、公開鍵・秘密鍵の生成、公開鍵の登録をしてください。</p>
+	<p>技術的な背景を知りたい人は、「公開鍵認証方式, SSH, HTTPS, FTP + とは」、みたいな単語でググってみてください。</p>
+	<blockquote>
+	<h3>GitHubでssh接続する手順~公開鍵・秘密鍵の生成から~</h3>
+	<a href="https://qiita.com/shizuma/items/2b2f873a0034839e47ce">https://qiita.com/shizuma/items/2b2f873a0034839e47ce</a>
+	</blockquote>
+	<h2>テキストエディタのインストール(任意)</h2>
+	<p>htmlファイルの編集にはテキストエディタが必要です。メモ帳でも良いですが、文字のハイライトや補完機能が使えるエディタの方がおすすめです。</p>
+	<p>いろいろ種類はありますが、私はSublimeText がおすすめです。</p>
+	<blockquote>
+	<h3>【完全ゼロから！】SublimeTextのインストールと使い方、便利な機能</h3>
+	<a href="https://eng-entrance.com/sublimetext-start">https://eng-entrance.com/sublimetext-start</a>
+	</blockquote>
+	<h1>編集方法</h1>
+	<h2>自分のPCにリポジトリをcloneする</h2>
+	<p>このサイトの中身を自分のPCにコピーします。</p>
+	<p>ただ、コピーされるのはGit管理されたファイルで、サイトの変更履歴やブランチの情報なども含まれるので、コピーとかダウンロードといわずにclone（クローン）といいます。</p>
+	<p>cloneすることによって、ローカルで編集した後のファイルをGitHubに反映させる(pushという)時も、特別な設定をすることなくコマンド一発でできるようになります。</p>
+	<p>cloneするには、コマンドプロンプトまたはターミナルに</p>
+	<pre>git clone git@github.com:vr-yamagata/vr-yamagata.github.io.git</pre>
+	<p>と打ち込んで(コピペ推奨)、エンターキーを押します。</p>
+	<p>GitとGitHubの連携の設定がうまくできていれば、ルートディレクトリにvr-yamagata.github.ioというフォルダができているはずです。</p>
+	<p>なお、カレントディレクトリを変更してからcloneすれば任意の場所にフォルダを作成することができます。</p>
+	<p>詳細を知りたい人はProgateのコマンドライン編を履修しましょう。</p>
+	<h2>ファイルを編集する</h2>
+	<p>編集したいファイルをエディタで開いてください。/Users/UserName/vr-yamagata.github.io/ 的な場所にあるはずです。</p>
+	<p>index.htmlをダブルクリックすると、既定のブラウザで開くと思います。</p>
+	<p>テキストエディタで変更した内容がすぐに確認できるので、このブラウザの画面を見ながら開発を進めましょう。</p>
+	<p>いちばん上の階層にあるindex.htmlを右クリックして（index.htmlは複数ある）、メモ帳なりSublimeTextなりで開いて、適当に編集します。</p>
+	<p>まずは自分の名前をメンバー一覧に追記してみましょう。</p>
+	<p>編集したら[ctrl] + Sキーでファイルを上書き保存して、ブラウザを[ctrl] + Rキーで更新してください。</p>
+	<p>これらの動作は頻繁にするので、ショートカットキーを使いましょう。</p>
+	<p>変更が反映されたのを確認したら、コマンドライン上で</p>
+	<pre>git add .</pre>
+	<pre>git commit -m "メンバー一覧に〇〇を追記"</pre>
+	<p>と打ちます。一行ごとにエンターキーを押してください。</p>
+	<p>addコマンドで変更したファイルをGitに認識させて、commitコマンドで記録しています。</p>
+	<p>ダブルクォートの中身をコミットメッセージといいます。</p>
+	<p>どんな変更をしたのかを簡潔に記載してください。</p>
+	<p>最後に、</p>
+	<pre>git push</pre>
+	<p>とコマンドラインに打ち込むと、これまで記録された内容がGitHubサーバー上にアップロードされ、Webサイトの内容が書き換わります。</p>
+	<p>これで変更の一連の手順は終わりです。</p>
+	<p>Progateで学んだことを活かして、個人ページを充実させていきましょう。</p>
+	<h2>補足・個人ページの作り方</h2>
+	<p>個人ページを作るには、新しいファイルを作成する必要があります。</p>
+	<p>① membersフォルダの中に個人名でフォルダを作成する</p>
+	<p>② 作成したフォルダの中に、index.htmlを作成する</p>
+	<p>③ VR部のホームページ(一番上の階層のページ)に、そのページへのリンクを追記する</p>
+	<p>例: &lt;a href ="./members/naoto"&gt;髙木の個人ページ&lt;/a&gt; </p>
+	<p>ちなみに、本来、./members/naotoは./members/naoto/index.htmlです。</p>
+	<p>たいていのWebサーバーはファイル名が省略されていた場合index.htmlのことなんだなと忖度してくれるので大丈夫という仕組みです。</p>
+	<p>そのため、ローカルでは挙動が違うはずですが、問題ありません。</p>
+	<p>なお、この要領でページを増やしていくことが可能です。</p>
+	<p>ドメインが変わっても良いように相対パスで指定してください。</p>
+</body>
+</html>
