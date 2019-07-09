@@ -1,6 +1,23 @@
 @charset "UTF-8";
-.header {
-  text-decoration: none;
-  color: black;
+.header{
+  padding: 20px;
+  font-size: 30px;
+  background-color: silver
+}
+.main{
+  background-color: #F0FFFF;
+}
+.header-logo {
   float: left;
+}
+a{
+  padding-left: 20px;
+  text-decoration: none;
+  color: red;
+}
+.twitter{
+  color: blue
+}
+.mi{
+  font-size: 25px
 }
