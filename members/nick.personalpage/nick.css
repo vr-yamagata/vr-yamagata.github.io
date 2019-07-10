@@ -1,1 +1,38 @@
-﻿ここにｃｓｓをthdうｋｇふｈくほあｈふぃあｗｈｖ、jklef54
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.header{
+  padding: 20px;
+  font-size: 30px;
+  background-color: silver
+}
+.main{
+  background-color: #F0FFFF;
+}
+.header-logo {
+  float: left;
+}
+a{
+  padding-left: 20px;
+  text-decoration: none;
+  color: red;
+}
+.twitter{
+  color: blue
+}
+.mi{
+  font-size: 25px
+}
+img{
+  max-width: 300px;
+  height: auto;
+  padding: 0px 200px
+}
+.footer{
+  padding: 20px;
+  font-size: 30px;
+  background-color: silver
+}
