@@ -1,0 +1,55 @@
+body {
+  background-color: aqua;
+  padding:0px 15px;
+}
+.belonging {
+  color: green;
+  font-size: 40px;
+}
+.name {
+  color: green;
+  font-size: 45px;
+}
+p {
+  font-size: 25px;
+  background-color: white;
+}
+.first {
+  color: #3300FF;
+}
+li {
+  font-size: 30px;
+}
+.head {
+    background-color: white;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.paragraph {
+     background-color: white;
+     padding-top: 0px;
+     padding-bottom: 0px;
+     margin-bottom: 0px;
+}
+span {
+  color: red;
+  font-size:35px;
+}
+.head img {
+  widgh: 250px;
+  height: 250px;
+  float: right;
+  margin-top: 50px;
+  margin-right:200px;
+}
+.paragraph img {
+  widgh: 250px;
+  height: 250px;
+  float: right;
+  padding-top: 40px;
+  margin-top: 1px;
+  margin-right: 200px;
+}
+a {
+  font-size: 20px;
+}
