@@ -1,4 +1,17 @@
-header{font-size: 45px;font-family: 'Yu Mincho Light';}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+header{font-size: 45px;font-family: 'Yu Mincho Light';
+  padding: 20px;
+  font-size: 30px;
+  background-color: silver
+}
 h1,h2{font-size: 25px;text-align: left;}
 body{background-image: url(http://www.d-shop.jp/column/wordpress/wp-content/uploads/2018/01/180112_haikei.jpg);
+}
+img{
+  max-width: 300px;
+  height: auto;
+  padding: 0px 200px
 }
