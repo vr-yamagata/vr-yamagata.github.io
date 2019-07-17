@@ -30,7 +30,7 @@ ul{
 .sns_link {
 	text-align: right;
 }
-/* リンクの色を上書き */	
+/* リンクの色を上書き */
 .member a {
 	text-decoration: none;
 	color: #333;
@@ -43,4 +43,7 @@ ul{
 
 .someone {
 	background-color: #efe;
+}
+.miyabi {
+	background-color: aqua;
 }
