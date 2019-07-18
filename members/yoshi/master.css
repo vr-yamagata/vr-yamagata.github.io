@@ -8,15 +8,14 @@ header{font-size: 64px;font-family: 'Yu Mincho Light';
 }
 h1,h2{font-size: 25px;text-align: left;}
 body{background-image: url(http://www.d-shop.jp/column/wordpress/wp-content/uploads/2018/01/180112_haikei.jpg);
-.seyana- img{
+}
+img.seyana-{
   max-width: 150px;
   padding: 0px;
   margin: 0px;
   float: right;
   border: 0px
 }
-.seyana img{
-  width: 1280px;
-  height: 720px;
-
+img.seyana{
+  width: 50%
 }
