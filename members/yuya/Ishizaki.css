@@ -1,8 +1,12 @@
-h1{
-  color:#66cc66;
+body{
+ background-image: url("C:/Users/ayuyd/vr-yamagata.github.io/members/yuya/unshakable Dynamix.png");
+ background-size: cover;
+ background-attachment: fixed;
+ background-position: center center;
 }
-.Crystal{
-  float:right;
-  width:200px;
-  height:200px;
+h1{
+  color: #00FFFF;
+}
+.game{
+  color: #00EE00;
 }
