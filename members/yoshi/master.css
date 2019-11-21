@@ -2,20 +2,30 @@
     margin: 0px;
     padding: 0px;
 }
-header{font-size: 64px;font-family: 'Yu Mincho Light';
+.title{
+  padding-left: 30px;
+}
+header{font-size: 40px;font-family: 'Yu Mincho Light';
   padding: 0px;
   background-color: silver;
+  height: 70px;
 }
 h1,h2{font-size: 25px;text-align: left;}
-body{background-image: url(http://www.d-shop.jp/column/wordpress/wp-content/uploads/2018/01/180112_haikei.jpg);
+body{background-color: #FFFFCC;
+
 }
-img.seyana-{
-  max-width: 150px;
+.seyana-{
+  height: 70px;
   padding: 0px;
   margin: 0px;
   float: right;
-  border: 0px
+  border: 0px;
+
 }
-img.seyana{
-  width: 50%
+.introduction{
+  width: 83.37%;
+  height: auto;
+  background-color: #CCFFCC ;
+  margin: auto;
+
 }
