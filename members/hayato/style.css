@@ -29,14 +29,12 @@ footer{
   color: #fff;
 }
 
-main{
-  margin-bottom: 40px;
-}
-
 h2{
   font-size: 30px;
   margin: 25px 0 5px;
 }
+
+/* img ============================= */
 
 img{
   margin: 20px 0 10px;
@@ -68,8 +66,16 @@ ul{
   list-style: none;
 }
 
+
+
+/* link & button ======================= */
+
 .link{
   margin-bottom: 30px;
+}
+
+.buttons li{
+  margin-bottom: 50px;
 }
 
 .button{
@@ -79,6 +85,18 @@ ul{
   color: #fff;
   border-radius: 20px;
 }
-.button:hover{
+
+.to_twitter:hover{
   background: #00acee;
+}
+
+.to_fledged:hover{
+  background: #e6bc87;
+}
+
+.to_home:hover{
+  color: #333;
+  background: #fff;
+  border: solid 4px #333;
+  padding: 14px 28px;
 }
