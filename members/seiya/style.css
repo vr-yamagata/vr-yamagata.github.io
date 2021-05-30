@@ -1,0 +1,44 @@
+body{
+	
+}
+
+h1{
+    background-color: #9d8e87;
+    font-size: 70px;
+    padding-top: 20px;
+    height: 110px;
+}
+
+video{
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	background-size: cover;
+}
+
+img{
+	float: right;
+}
+
+.main{
+	font-size: 20px;
+}
+
+.main-list{
+	list-style: none;
+	float: left;
+}
+
+.footer{
+	font-size: 50px;
+	padding-bottom: 20px;
+	position: absolute;
+	bottom: 0;
+}
